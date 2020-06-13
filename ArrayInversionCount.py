@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed May 27 16:26:52 2020
-
+use the bisect module
+which quickly give the position of the new introduced number in a sorted array
 @author: frank
 """
 import unittest
@@ -19,9 +20,6 @@ def solution(A):
         count += len(array) - pos
         array.insert(pos, number)
 
-
-            
-        
     if count > int(1e9):
         return -1
     return count
@@ -36,5 +34,3 @@ class testsolution(unittest.TestCase):
         self.assertEqual(solution(A), 10)
 if __name__ == '__main__':
     unittest.main()
-
-
